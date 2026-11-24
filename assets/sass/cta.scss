@@ -1,0 +1,147 @@
+.banner-cta-1 {
+    background-color: $COLOR_3;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    .img-b{
+        margin-top: 5px;
+    }
+
+    .img {
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            // position: absolute;
+            // bottom: 0;
+            max-width:90px;
+        }
+    }
+    .txt{
+        padding-top: 20px;
+        // padding-left: 50px;
+    }
+
+    h2 {
+        color: #FFF;
+        font-family: 'IBMPlexSans-SemiBold';
+        font-size: 1.5rem;
+
+        .c_small {
+            font-family: 'IBMPlexSans-Regular'; 
+            font-size: 1rem;
+            display: inline-table;
+            margin-top: 10px;
+            display: grid;
+        }
+        .efecto{
+            font-size: 2rem;
+            background-color: $COLOR_3;
+            font-family: 'IBMPlexSans-SemiBoldItalic';  
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 7px;
+            color: #FFF;
+        }
+        .img-ingles{
+            img{
+                max-width: 90px;
+            }
+        }
+    }
+}
+
+.banner-cta-2{
+    background-image: url('../img/bg-cta-2.png');
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h3{
+        color: #FFF;
+        font-family: 'IBMPlexSans-SemiBold'; 
+        font-size: 1.4rem;
+    }
+    h4{
+        color: #FFF;
+        font-family: 'IBMPlexSans-Regular'; 
+        font-size: 1.1rem;
+    }
+    h5{
+        color: #FFF;
+        font-family: 'IBMPlexSans-MediumItalic'; 
+        font-size: .9rem;
+    }
+    .img-2{
+        max-width: 90px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-cta-1{
+        padding-bottom: 30px;
+        h2{
+            text-align: center;
+        }
+    }
+    .banner-cta-2{
+        background-image: none;
+        .block-1{
+            padding: 20px 25px;
+            background-color: $COLOR_1;
+            img{
+                margin-bottom: 20px;
+            }
+        }
+        .block-2{
+            padding: 20px 25px;
+            background-color: $COLOR_3;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .banner-cta-2{
+        img{
+            max-height: 50px;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner-cta-2{
+        background-image: url('../img/bg-cta-2.png');
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .banner-cta-2{
+        img{
+            max-height: 70px;
+        }
+    }
+    .banner-cta-1{
+        .txt{
+            h2{
+                .efecto{
+                    &::after{
+                        content: url('../img/after-4.png');
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                        transform: scale(0.85);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
